@@ -1,3 +1,27 @@
-//å°æ˜Žæœ‰ 5 å¼ æ•°å­—å¡ç‰‡ï¼Œä¸Šé¢åˆ†åˆ«ä¸ºæ•°å­— 1ï¼Œ 2ï¼Œ 3ï¼Œ 6ï¼Œ 9ã€‚å°æ˜Žæƒ³ç”¨è¿™ 5 å¼ æ•°å­—å¡ç‰‡ç»„æˆä¸€ä¸ªæœ€å¤§çš„ 5 ä½
-//æ•°ï¼Œè¿™ä¸ªäº”ä½æ•°æ˜¯_______ã€‚
-//ç¼–ç¨‹ï¼šä»»æ„è¾“å…¥5ä¸ªæ•°å­—ï¼Œå°†å®ƒä»¬ç»„åˆä¸ºæœ€å¤§çš„5ä½æ•°è¾“å‡ºã€‚
+//Ð¡Ã÷ÓÐ 5 ÕÅÊý×Ö¿¨Æ¬£¬ÉÏÃæ·Ö±ðÎªÊý×Ö 1£¬ 2£¬ 3£¬ 6£¬ 9¡£Ð¡Ã÷ÏëÓÃÕâ 5 ÕÅÊý×Ö¿¨Æ¬×é³ÉÒ»¸ö×î´óµÄ 5 Î»
+//Êý£¬Õâ¸öÎåÎ»ÊýÊÇ_______¡£
+//±à³Ì£ºÈÎÒâÊäÈë5¸öÊý×Ö£¬½«ËüÃÇ×éºÏÎª×î´óµÄ5Î»ÊýÊä³ö¡£
+
+#include <stdio.h>
+
+int main(void){
+	int a[4],temp[4];
+	int i,y,x;
+	printf("input 5 numbers\n");
+	for(i=0;i<=4;i++){
+		scanf("%d",&a[i]);	
+	}
+	for(x=0;x<4;x++){
+		for(y=x;y<5;y++){
+			if(a[x]<a[y]){
+				temp[x]=a[x];
+				a[x]=a[y];
+				a[y]=temp[x];
+			}
+		}
+	}
+	printf("MAX:");
+	for(i=0;i<=4;i++){
+		printf("%d",a[i]);
+	}
+}
