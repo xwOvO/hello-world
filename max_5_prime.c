@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
 	int i,j;//Ñ­»·Êý
-	int num[4];
+	int num[5];
 	while(i<5){
 		scanf("%d",&num[i]);
 		i++;
@@ -20,11 +20,8 @@ int main(){
 		i=1;
 		if(value%j==0){
 			value=value-i;
-		}else
-		{
-			printf("%d",value);
-			break;
 		}
 	}
+	printf("n=%d",value);
 	return 0;
 }
